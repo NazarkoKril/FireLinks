@@ -1,0 +1,1200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/styled.css" />
+    <!-- sweet alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <title>Epickstars</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header__container">
+          <nav class="header__nav1">
+            <a href="./index.html" class="logo1">Logo</a>
+
+            <ul class="nav1__list">
+              <li class="nav1__item">
+                <a class="nav1__link" href="">Про нас</a>
+              </li>
+              <li class="nav1__item">
+                <a class="nav1__link" href="./index-2.html">Каталог каналів</a>
+              </li>
+              <li class="nav1__item">
+                <a class="nav1__link" href="./index-3.html"
+                  >Пакетні пропозиції</a
+                >
+              </li>
+              <li class="nav1__item">
+                <a class="nav1__link" href="">Контакти</a>
+              </li>
+            </ul>
+
+            <svg class="header__icon">
+              <use href="./img/icon.svg#globus"></use>
+            </svg>
+          </nav>
+          <div class="header__log">
+            <svg class="header__icon">
+              <use href="./img/icon.svg#out"></use>
+            </svg>
+            <svg class="header__icon">
+              <use href="./img/icon.svg#add"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <h1 class="main__title">Великий каталог телеграм-каналів</h1>
+      <p class="main__subtitle">
+        Замовити рекламу в телеграм каналах ви можете за допомогою нашого
+        сервісу!
+      </p>
+      <div class="main__card">
+        <div class="filter">
+          <form action="#">
+            <h2 class="form1__title">Фільтр</h2>
+
+            <p class="form1__subtitle">Канал</p>
+            <input
+              class="input__chanel"
+              type="text"
+              id="channel"
+              name="channel"
+              placeholder="Введіть канал"
+            />
+
+            <p class="form1__subtitle">Мітки</p>
+            <div class="form__round-container">
+              <div class="form__round">
+                <svg class="form__icon">
+                  <use href="./img/icon.svg#icon-filter1"></use>
+                </svg>
+              </div>
+              <div class="form__round">
+                <svg class="form__icon">
+                  <use href="./img/icon.svg#icon-filter2"></use>
+                </svg>
+              </div>
+              <div class="form__round">
+                <svg class="form__icon">
+                  <use href="./img/icon.svg#icon-filter3"></use>
+                </svg>
+              </div>
+            </div>
+            <p class="form1__subtitle">Категорія</p>
+            <input
+              class="input__chanel"
+              type="text"
+              id="category"
+              name="category"
+            />
+
+            <p class="form1__subtitle">Ціна</p>
+            <input
+              class="input__price1"
+              type="text"
+              id="priceFrom"
+              name="priceFrom"
+              placeholder="Ціна, від"
+            />
+            <input
+              class="input__price"
+              type="text"
+              id="priceTo"
+              name="priceTo"
+              placeholder="До"
+            />
+
+            <p class="form1__subtitle">Охоплення</p>
+            <input
+              class="input__price1"
+              type="text"
+              id="viewsFrom"
+              name="viewsFrom"
+              placeholder="Охоплення, від"
+            />
+            <input
+              class="input__price"
+              type="text"
+              id="viewsTo"
+              name="viewsTo"
+              placeholder="До"
+            />
+          </form>
+        </div>
+        <ul class="card__list">
+          <li class="card__item">
+            <div class="card_right">
+              <svg class="card_right__icon">
+                <use href="./img/icon.svg#rating1"></use>
+              </svg>
+            </div>
+            <div class="card">
+              <div class="card__top">
+                <img class="top__img" src="./img/card__logo.png" alt="" />
+                <div class="">
+                  <h3 class="top__title">Реальний Київ | Украина</h3>
+                  <p class="top__subtitle">1 050 465 підписників</p>
+                  <div class="top__info">
+                    <svg class="top__icon">
+                      <use href="./img/icon.svg#card__top"></use>
+                    </svg>
+                    <p class="top__p">
+                      <span class="top__span">+1 321 </span>за вчора
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="form__round-container">
+                <div class="form__round1">
+                  <svg class="form__icon">
+                    <use href="./img/icon.svg#icon-filter1"></use>
+                  </svg>
+                </div>
+                <div class="form__round1">
+                  <svg class="form__icon">
+                    <use href="./img/icon.svg#icon-filter2"></use>
+                  </svg>
+                </div>
+                <div class="form__round1">
+                  <svg class="form__icon">
+                    <use href="./img/icon.svg#icon-filter3"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="card__category">
+                <div class="category__container">
+                  <svg class="category__icon">
+                    <use href="./img/icon.svg#category__icon"></use>
+                  </svg>
+                  <p class="category__title">Категорія</p>
+                </div>
+                <p class="category__subtitle">Новини/ЗМІ</p>
+              </div>
+              <div class="card__result">
+                <div class="result__view">
+                  <div class="view">
+                    <svg class="view__icon">
+                      <use href="./img/icon.svg#view"></use>
+                    </svg>
+                    <p class="view__title">Переглядів</p>
+                  </div>
+                  <p class="view__number">350 900</p>
+                </div>
+                <div class="result__rating">
+                  <div class="rating">
+                    <svg class="rating__icon">
+                      <use href="./img/icon.svg#rating"></use>
+                    </svg>
+                    <p class="rating__title">CPM</p>
+                  </div>
+                  <p class="rating__number">64</p>
+                </div>
+              </div>
+              <div class="card_price">
+                <div class="price">
+                  <svg class="price__icon">
+                    <use href="./img/icon.svg#price"></use>
+                  </svg>
+                  <p class="price__title">Ціна реклами</p>
+                </div>
+
+                <div class="price-field">
+                  <span class="left-text">15/24</span>
+                  <div class="right-text">
+                    <span class="right-title">36 850₴</span>
+                    <svg class="arrov__icon">
+                      <use href="./img/icon.svg#arrow_down"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="card__about">
+                <svg class="about__icon">
+                  <use href="./img/icon.svg#about"></use>
+                </svg>
+                <p class="card__about-title">
+                  Формат розміщення
+                  <a class="card__about-link" href="">Що це?</a>
+                </p>
+              </div>
+              <div class="card__bot">
+                <div class="card__like">
+                  <svg class="like__icon">
+                    <use href="./img/icon.svg#like"></use>
+                  </svg>
+                  <span class="like__number">17</span>
+                </div>
+                <button class="card__btn">
+                  <span class="card__btb-bag">
+                    <svg class="bag__icon">
+                      <use href="./img/icon.svg#bag"></use>
+                    </svg>
+                  </span>
+                  Купити
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="card__item">
+            <div class="card_right">
+              <svg class="card_right__icon">
+                <use href="./img/icon.svg#rating1"></use>
+              </svg>
+            </div>
+            <div class="card">
+              <div class="card__top">
+                <img class="top__img" src="./img/card__logo.png" alt="" />
+                <div class="">
+                  <h3 class="top__title">Реальний Київ | Украина</h3>
+                  <p class="top__subtitle">1 050 465 підписників</p>
+                  <div class="top__info">
+                    <svg class="top__icon">
+                      <use href="./img/icon.svg#card__top"></use>
+                    </svg>
+                    <p class="top__p">
+                      <span class="top__span">+1 321 </span>за вчора
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="form__round-container">
+                <div class="form__round1">
+                  <svg class="form__icon">
+                    <use href="./img/icon.svg#icon-filter1"></use>
+                  </svg>
+                </div>
+                <div class="form__round1">
+                  <svg class="form__icon">
+                    <use href="./img/icon.svg#icon-filter2"></use>
+                  </svg>
+                </div>
+                <div class="form__round1">
+                  <svg class="form__icon">
+                    <use href="./img/icon.svg#icon-filter3"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="card__category">
+                <div class="category__container">
+                  <svg class="category__icon">
+                    <use href="./img/icon.svg#category__icon"></use>
+                  </svg>
+                  <p class="category__title">Категорія</p>
+                </div>
+                <p class="category__subtitle">Новини/ЗМІ</p>
+              </div>
+              <div class="card__result">
+                <div class="result__view">
+                  <div class="view">
+                    <svg class="view__icon">
+                      <use href="./img/icon.svg#view"></use>
+                    </svg>
+                    <p class="view__title">Переглядів</p>
+                  </div>
+                  <p class="view__number">350 900</p>
+                </div>
+                <div class="result__rating">
+                  <div class="rating">
+                    <svg class="rating__icon">
+                      <use href="./img/icon.svg#rating"></use>
+                    </svg>
+                    <p class="rating__title">CPM</p>
+                  </div>
+                  <p class="rating__number">64</p>
+                </div>
+              </div>
+              <div class="card_price">
+                <div class="price">
+                  <svg class="price__icon">
+                    <use href="./img/icon.svg#price"></use>
+                  </svg>
+                  <p class="price__title">Ціна реклами</p>
+                </div>
+
+                <div class="price-field">
+                  <span class="left-text">15/24</span>
+                  <div class="right-text">
+                    <span class="right-title">36 850₴</span>
+                    <svg class="arrov__icon">
+                      <use href="./img/icon.svg#arrow_down"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="card__about">
+                <svg class="about__icon">
+                  <use href="./img/icon.svg#about"></use>
+                </svg>
+                <p class="card__about-title">
+                  Формат розміщення
+                  <a class="card__about-link" href="">Що це?</a>
+                </p>
+              </div>
+              <div class="card__bot">
+                <div class="card__like">
+                  <svg class="like__icon">
+                    <use href="./img/icon.svg#like"></use>
+                  </svg>
+                  <span class="like__number">17</span>
+                </div>
+                <button class="card__btn">
+                  <span class="card__btb-bag">
+                    <svg class="bag__icon">
+                      <use href="./img/icon.svg#bag"></use>
+                    </svg>
+                  </span>
+                  Купити
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="card__item">
+            <div class="card_right">
+              <svg class="card_right__icon">
+                <use href="./img/icon.svg#rating1"></use>
+              </svg>
+            </div>
+            <div class="card">
+              <div class="card__top">
+                <img class="top__img" src="./img/card__logo.png" alt="" />
+                <div class="">
+                  <h3 class="top__title">Реальний Київ | Украина</h3>
+                  <p class="top__subtitle">1 050 465 підписників</p>
+                  <div class="top__info">
+                    <svg class="top__icon">
+                      <use href="./img/icon.svg#card__top"></use>
+                    </svg>
+                    <p class="top__p">
+                      <span class="top__span">+1 321 </span>за вчора
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="form__round-container">
+                <div class="form__round1">
+                  <svg class="form__icon">
+                    <use href="./img/icon.svg#icon-filter1"></use>
+                  </svg>
+                </div>
+                <div class="form__round1">
+                  <svg class="form__icon">
+                    <use href="./img/icon.svg#icon-filter2"></use>
+                  </svg>
+                </div>
+                <div class="form__round1">
+                  <svg class="form__icon">
+                    <use href="./img/icon.svg#icon-filter3"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="card__category">
+                <div class="category__container">
+                  <svg class="category__icon">
+                    <use href="./img/icon.svg#category__icon"></use>
+                  </svg>
+                  <p class="category__title">Категорія</p>
+                </div>
+                <p class="category__subtitle">Новини/ЗМІ</p>
+              </div>
+              <div class="card__result">
+                <div class="result__view">
+                  <div class="view">
+                    <svg class="view__icon">
+                      <use href="./img/icon.svg#view"></use>
+                    </svg>
+                    <p class="view__title">Переглядів</p>
+                  </div>
+                  <p class="view__number">350 900</p>
+                </div>
+                <div class="result__rating">
+                  <div class="rating">
+                    <svg class="rating__icon">
+                      <use href="./img/icon.svg#rating"></use>
+                    </svg>
+                    <p class="rating__title">CPM</p>
+                  </div>
+                  <p class="rating__number">64</p>
+                </div>
+              </div>
+              <div class="card_price">
+                <div class="price">
+                  <svg class="price__icon">
+                    <use href="./img/icon.svg#price"></use>
+                  </svg>
+                  <p class="price__title">Ціна реклами</p>
+                </div>
+
+                <div class="price-field">
+                  <span class="left-text">15/24</span>
+                  <div class="right-text">
+                    <span class="right-title">36 850₴</span>
+                    <svg class="arrov__icon">
+                      <use href="./img/icon.svg#arrow_down"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="card__about">
+                <svg class="about__icon">
+                  <use href="./img/icon.svg#about"></use>
+                </svg>
+                <p class="card__about-title">
+                  Формат розміщення
+                  <a class="card__about-link" href="">Що це?</a>
+                </p>
+              </div>
+              <div class="card__bot">
+                <div class="card__like">
+                  <svg class="like__icon">
+                    <use href="./img/icon.svg#like"></use>
+                  </svg>
+                  <span class="like__number">17</span>
+                </div>
+                <button class="card__btn">
+                  <span class="card__btb-bag">
+                    <svg class="bag__icon">
+                      <use href="./img/icon.svg#bag"></use>
+                    </svg>
+                  </span>
+                  Купити
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="card__item">
+            <div class="card_right">
+              <svg class="card_right__icon">
+                <use href="./img/icon.svg#rating1"></use>
+              </svg>
+            </div>
+            <div class="card">
+              <div class="card__top">
+                <img class="top__img" src="./img/card__logo.png" alt="" />
+                <div class="">
+                  <h3 class="top__title">Реальний Київ | Украина</h3>
+                  <p class="top__subtitle">1 050 465 підписників</p>
+                  <div class="top__info">
+                    <svg class="top__icon">
+                      <use href="./img/icon.svg#card__top"></use>
+                    </svg>
+                    <p class="top__p">
+                      <span class="top__span">+1 321 </span>за вчора
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="form__round-container">
+                <div class="form__round1">
+                  <svg class="form__icon">
+                    <use href="./img/icon.svg#icon-filter1"></use>
+                  </svg>
+                </div>
+                <div class="form__round1">
+                  <svg class="form__icon">
+                    <use href="./img/icon.svg#icon-filter2"></use>
+                  </svg>
+                </div>
+                <div class="form__round1">
+                  <svg class="form__icon">
+                    <use href="./img/icon.svg#icon-filter3"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="card__category">
+                <div class="category__container">
+                  <svg class="category__icon">
+                    <use href="./img/icon.svg#category__icon"></use>
+                  </svg>
+                  <p class="category__title">Категорія</p>
+                </div>
+                <p class="category__subtitle">Новини/ЗМІ</p>
+              </div>
+              <div class="card__result">
+                <div class="result__view">
+                  <div class="view">
+                    <svg class="view__icon">
+                      <use href="./img/icon.svg#view"></use>
+                    </svg>
+                    <p class="view__title">Переглядів</p>
+                  </div>
+                  <p class="view__number">350 900</p>
+                </div>
+                <div class="result__rating">
+                  <div class="rating">
+                    <svg class="rating__icon">
+                      <use href="./img/icon.svg#rating"></use>
+                    </svg>
+                    <p class="rating__title">CPM</p>
+                  </div>
+                  <p class="rating__number">64</p>
+                </div>
+              </div>
+              <div class="card_price">
+                <div class="price">
+                  <svg class="price__icon">
+                    <use href="./img/icon.svg#price"></use>
+                  </svg>
+                  <p class="price__title">Ціна реклами</p>
+                </div>
+
+                <div class="price-field">
+                  <span class="left-text">15/24</span>
+                  <div class="right-text">
+                    <span class="right-title">36 850₴</span>
+                    <svg class="arrov__icon">
+                      <use href="./img/icon.svg#arrow_down"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="card__about">
+                <svg class="about__icon">
+                  <use href="./img/icon.svg#about"></use>
+                </svg>
+                <p class="card__about-title">
+                  Формат розміщення
+                  <a class="card__about-link" href="">Що це?</a>
+                </p>
+              </div>
+              <div class="card__bot">
+                <div class="card__like">
+                  <svg class="like__icon">
+                    <use href="./img/icon.svg#like"></use>
+                  </svg>
+                  <span class="like__number">17</span>
+                </div>
+                <button class="card__btn">
+                  <span class="card__btb-bag">
+                    <svg class="bag__icon">
+                      <use href="./img/icon.svg#bag"></use>
+                    </svg>
+                  </span>
+                  Купити
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="card__item">
+            <div class="card_right">
+              <svg class="card_right__icon">
+                <use href="./img/icon.svg#rating1"></use>
+              </svg>
+            </div>
+            <div class="card">
+              <div class="card__top">
+                <img class="top__img" src="./img/card__logo.png" alt="" />
+                <div class="">
+                  <h3 class="top__title">Реальний Київ | Украина</h3>
+                  <p class="top__subtitle">1 050 465 підписників</p>
+                  <div class="top__info">
+                    <svg class="top__icon">
+                      <use href="./img/icon.svg#card__top"></use>
+                    </svg>
+                    <p class="top__p">
+                      <span class="top__span">+1 321 </span>за вчора
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="form__round-container">
+                <div class="form__round1">
+                  <svg class="form__icon">
+                    <use href="./img/icon.svg#icon-filter1"></use>
+                  </svg>
+                </div>
+                <div class="form__round1">
+                  <svg class="form__icon">
+                    <use href="./img/icon.svg#icon-filter2"></use>
+                  </svg>
+                </div>
+                <div class="form__round1">
+                  <svg class="form__icon">
+                    <use href="./img/icon.svg#icon-filter3"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="card__category">
+                <div class="category__container">
+                  <svg class="category__icon">
+                    <use href="./img/icon.svg#category__icon"></use>
+                  </svg>
+                  <p class="category__title">Категорія</p>
+                </div>
+                <p class="category__subtitle">Новини/ЗМІ</p>
+              </div>
+              <div class="card__result">
+                <div class="result__view">
+                  <div class="view">
+                    <svg class="view__icon">
+                      <use href="./img/icon.svg#view"></use>
+                    </svg>
+                    <p class="view__title">Переглядів</p>
+                  </div>
+                  <p class="view__number">350 900</p>
+                </div>
+                <div class="result__rating">
+                  <div class="rating">
+                    <svg class="rating__icon">
+                      <use href="./img/icon.svg#rating"></use>
+                    </svg>
+                    <p class="rating__title">CPM</p>
+                  </div>
+                  <p class="rating__number">64</p>
+                </div>
+              </div>
+              <div class="card_price">
+                <div class="price">
+                  <svg class="price__icon">
+                    <use href="./img/icon.svg#price"></use>
+                  </svg>
+                  <p class="price__title">Ціна реклами</p>
+                </div>
+
+                <div class="price-field">
+                  <span class="left-text">15/24</span>
+                  <div class="right-text">
+                    <span class="right-title">36 850₴</span>
+                    <svg class="arrov__icon">
+                      <use href="./img/icon.svg#arrow_down"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="card__about">
+                <svg class="about__icon">
+                  <use href="./img/icon.svg#about"></use>
+                </svg>
+                <p class="card__about-title">
+                  Формат розміщення
+                  <a class="card__about-link" href="">Що це?</a>
+                </p>
+              </div>
+              <div class="card__bot">
+                <div class="card__like">
+                  <svg class="like__icon">
+                    <use href="./img/icon.svg#like"></use>
+                  </svg>
+                  <span class="like__number">17</span>
+                </div>
+                <button class="card__btn">
+                  <span class="card__btb-bag">
+                    <svg class="bag__icon">
+                      <use href="./img/icon.svg#bag"></use>
+                    </svg>
+                  </span>
+                  Купити
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="card__item">
+            <div class="card_right">
+              <svg class="card_right__icon">
+                <use href="./img/icon.svg#rating1"></use>
+              </svg>
+            </div>
+            <div class="card">
+              <div class="card__top">
+                <img class="top__img" src="./img/card__logo.png" alt="" />
+                <div class="">
+                  <h3 class="top__title">Реальний Київ | Украина</h3>
+                  <p class="top__subtitle">1 050 465 підписників</p>
+                  <div class="top__info">
+                    <svg class="top__icon">
+                      <use href="./img/icon.svg#card__top"></use>
+                    </svg>
+                    <p class="top__p">
+                      <span class="top__span">+1 321 </span>за вчора
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="form__round-container">
+                <div class="form__round1">
+                  <svg class="form__icon">
+                    <use href="./img/icon.svg#icon-filter1"></use>
+                  </svg>
+                </div>
+                <div class="form__round1">
+                  <svg class="form__icon">
+                    <use href="./img/icon.svg#icon-filter2"></use>
+                  </svg>
+                </div>
+                <div class="form__round1">
+                  <svg class="form__icon">
+                    <use href="./img/icon.svg#icon-filter3"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="card__category">
+                <div class="category__container">
+                  <svg class="category__icon">
+                    <use href="./img/icon.svg#category__icon"></use>
+                  </svg>
+                  <p class="category__title">Категорія</p>
+                </div>
+                <p class="category__subtitle">Новини/ЗМІ</p>
+              </div>
+              <div class="card__result">
+                <div class="result__view">
+                  <div class="view">
+                    <svg class="view__icon">
+                      <use href="./img/icon.svg#view"></use>
+                    </svg>
+                    <p class="view__title">Переглядів</p>
+                  </div>
+                  <p class="view__number">350 900</p>
+                </div>
+                <div class="result__rating">
+                  <div class="rating">
+                    <svg class="rating__icon">
+                      <use href="./img/icon.svg#rating"></use>
+                    </svg>
+                    <p class="rating__title">CPM</p>
+                  </div>
+                  <p class="rating__number">64</p>
+                </div>
+              </div>
+              <div class="card_price">
+                <div class="price">
+                  <svg class="price__icon">
+                    <use href="./img/icon.svg#price"></use>
+                  </svg>
+                  <p class="price__title">Ціна реклами</p>
+                </div>
+
+                <div class="price-field">
+                  <span class="left-text">15/24</span>
+                  <div class="right-text">
+                    <span class="right-title">36 850₴</span>
+                    <svg class="arrov__icon">
+                      <use href="./img/icon.svg#arrow_down"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="card__about">
+                <svg class="about__icon">
+                  <use href="./img/icon.svg#about"></use>
+                </svg>
+                <p class="card__about-title">
+                  Формат розміщення
+                  <a class="card__about-link" href="">Що це?</a>
+                </p>
+              </div>
+              <div class="card__bot">
+                <div class="card__like">
+                  <svg class="like__icon">
+                    <use href="./img/icon.svg#like"></use>
+                  </svg>
+                  <span class="like__number">17</span>
+                </div>
+                <button class="card__btn">
+                  <span class="card__btb-bag">
+                    <svg class="bag__icon">
+                      <use href="./img/icon.svg#bag"></use>
+                    </svg>
+                  </span>
+                  Купити
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="card__item">
+            <div class="card_right">
+              <svg class="card_right__icon">
+                <use href="./img/icon.svg#rating1"></use>
+              </svg>
+            </div>
+            <div class="card">
+              <div class="card__top">
+                <img class="top__img" src="./img/card__logo.png" alt="" />
+                <div class="">
+                  <h3 class="top__title">Реальний Київ | Украина</h3>
+                  <p class="top__subtitle">1 050 465 підписників</p>
+                  <div class="top__info">
+                    <svg class="top__icon">
+                      <use href="./img/icon.svg#card__top"></use>
+                    </svg>
+                    <p class="top__p">
+                      <span class="top__span">+1 321 </span>за вчора
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="form__round-container">
+                <div class="form__round1">
+                  <svg class="form__icon">
+                    <use href="./img/icon.svg#icon-filter1"></use>
+                  </svg>
+                </div>
+                <div class="form__round1">
+                  <svg class="form__icon">
+                    <use href="./img/icon.svg#icon-filter2"></use>
+                  </svg>
+                </div>
+                <div class="form__round1">
+                  <svg class="form__icon">
+                    <use href="./img/icon.svg#icon-filter3"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="card__category">
+                <div class="category__container">
+                  <svg class="category__icon">
+                    <use href="./img/icon.svg#category__icon"></use>
+                  </svg>
+                  <p class="category__title">Категорія</p>
+                </div>
+                <p class="category__subtitle">Новини/ЗМІ</p>
+              </div>
+              <div class="card__result">
+                <div class="result__view">
+                  <div class="view">
+                    <svg class="view__icon">
+                      <use href="./img/icon.svg#view"></use>
+                    </svg>
+                    <p class="view__title">Переглядів</p>
+                  </div>
+                  <p class="view__number">350 900</p>
+                </div>
+                <div class="result__rating">
+                  <div class="rating">
+                    <svg class="rating__icon">
+                      <use href="./img/icon.svg#rating"></use>
+                    </svg>
+                    <p class="rating__title">CPM</p>
+                  </div>
+                  <p class="rating__number">64</p>
+                </div>
+              </div>
+              <div class="card_price">
+                <div class="price">
+                  <svg class="price__icon">
+                    <use href="./img/icon.svg#price"></use>
+                  </svg>
+                  <p class="price__title">Ціна реклами</p>
+                </div>
+
+                <div class="price-field">
+                  <span class="left-text">15/24</span>
+                  <div class="right-text">
+                    <span class="right-title">36 850₴</span>
+                    <svg class="arrov__icon">
+                      <use href="./img/icon.svg#arrow_down"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="card__about">
+                <svg class="about__icon">
+                  <use href="./img/icon.svg#about"></use>
+                </svg>
+                <p class="card__about-title">
+                  Формат розміщення
+                  <a class="card__about-link" href="">Що це?</a>
+                </p>
+              </div>
+              <div class="card__bot">
+                <div class="card__like">
+                  <svg class="like__icon">
+                    <use href="./img/icon.svg#like"></use>
+                  </svg>
+                  <span class="like__number">17</span>
+                </div>
+                <button class="card__btn">
+                  <span class="card__btb-bag">
+                    <svg class="bag__icon">
+                      <use href="./img/icon.svg#bag"></use>
+                    </svg>
+                  </span>
+                  Купити
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="card__item">
+            <div class="card_right">
+              <svg class="card_right__icon">
+                <use href="./img/icon.svg#rating1"></use>
+              </svg>
+            </div>
+            <div class="card">
+              <div class="card__top">
+                <img class="top__img" src="./img/card__logo.png" alt="" />
+                <div class="">
+                  <h3 class="top__title">Реальний Київ | Украина</h3>
+                  <p class="top__subtitle">1 050 465 підписників</p>
+                  <div class="top__info">
+                    <svg class="top__icon">
+                      <use href="./img/icon.svg#card__top"></use>
+                    </svg>
+                    <p class="top__p">
+                      <span class="top__span">+1 321 </span>за вчора
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="form__round-container">
+                <div class="form__round1">
+                  <svg class="form__icon">
+                    <use href="./img/icon.svg#icon-filter1"></use>
+                  </svg>
+                </div>
+                <div class="form__round1">
+                  <svg class="form__icon">
+                    <use href="./img/icon.svg#icon-filter2"></use>
+                  </svg>
+                </div>
+                <div class="form__round1">
+                  <svg class="form__icon">
+                    <use href="./img/icon.svg#icon-filter3"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="card__category">
+                <div class="category__container">
+                  <svg class="category__icon">
+                    <use href="./img/icon.svg#category__icon"></use>
+                  </svg>
+                  <p class="category__title">Категорія</p>
+                </div>
+                <p class="category__subtitle">Новини/ЗМІ</p>
+              </div>
+              <div class="card__result">
+                <div class="result__view">
+                  <div class="view">
+                    <svg class="view__icon">
+                      <use href="./img/icon.svg#view"></use>
+                    </svg>
+                    <p class="view__title">Переглядів</p>
+                  </div>
+                  <p class="view__number">350 900</p>
+                </div>
+                <div class="result__rating">
+                  <div class="rating">
+                    <svg class="rating__icon">
+                      <use href="./img/icon.svg#rating"></use>
+                    </svg>
+                    <p class="rating__title">CPM</p>
+                  </div>
+                  <p class="rating__number">64</p>
+                </div>
+              </div>
+              <div class="card_price">
+                <div class="price">
+                  <svg class="price__icon">
+                    <use href="./img/icon.svg#price"></use>
+                  </svg>
+                  <p class="price__title">Ціна реклами</p>
+                </div>
+
+                <div class="price-field">
+                  <span class="left-text">15/24</span>
+                  <div class="right-text">
+                    <span class="right-title">36 850₴</span>
+                    <svg class="arrov__icon">
+                      <use href="./img/icon.svg#arrow_down"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="card__about">
+                <svg class="about__icon">
+                  <use href="./img/icon.svg#about"></use>
+                </svg>
+                <p class="card__about-title">
+                  Формат розміщення
+                  <a class="card__about-link" href="">Що це?</a>
+                </p>
+              </div>
+              <div class="card__bot">
+                <div class="card__like">
+                  <svg class="like__icon">
+                    <use href="./img/icon.svg#like"></use>
+                  </svg>
+                  <span class="like__number">17</span>
+                </div>
+                <button class="card__btn">
+                  <span class="card__btb-bag">
+                    <svg class="bag__icon">
+                      <use href="./img/icon.svg#bag"></use>
+                    </svg>
+                  </span>
+                  Купити
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="card__item">
+            <div class="card_right">
+              <svg class="card_right__icon">
+                <use href="./img/icon.svg#rating1"></use>
+              </svg>
+            </div>
+            <div class="card">
+              <div class="card__top">
+                <img class="top__img" src="./img/card__logo.png" alt="" />
+                <div class="">
+                  <h3 class="top__title">Реальний Київ | Украина</h3>
+                  <p class="top__subtitle">1 050 465 підписників</p>
+                  <div class="top__info">
+                    <svg class="top__icon">
+                      <use href="./img/icon.svg#card__top"></use>
+                    </svg>
+                    <p class="top__p">
+                      <span class="top__span">+1 321 </span>за вчора
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="form__round-container">
+                <div class="form__round1">
+                  <svg class="form__icon">
+                    <use href="./img/icon.svg#icon-filter1"></use>
+                  </svg>
+                </div>
+                <div class="form__round1">
+                  <svg class="form__icon">
+                    <use href="./img/icon.svg#icon-filter2"></use>
+                  </svg>
+                </div>
+                <div class="form__round1">
+                  <svg class="form__icon">
+                    <use href="./img/icon.svg#icon-filter3"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="card__category">
+                <div class="category__container">
+                  <svg class="category__icon">
+                    <use href="./img/icon.svg#category__icon"></use>
+                  </svg>
+                  <p class="category__title">Категорія</p>
+                </div>
+                <p class="category__subtitle">Новини/ЗМІ</p>
+              </div>
+              <div class="card__result">
+                <div class="result__view">
+                  <div class="view">
+                    <svg class="view__icon">
+                      <use href="./img/icon.svg#view"></use>
+                    </svg>
+                    <p class="view__title">Переглядів</p>
+                  </div>
+                  <p class="view__number">350 900</p>
+                </div>
+                <div class="result__rating">
+                  <div class="rating">
+                    <svg class="rating__icon">
+                      <use href="./img/icon.svg#rating"></use>
+                    </svg>
+                    <p class="rating__title">CPM</p>
+                  </div>
+                  <p class="rating__number">64</p>
+                </div>
+              </div>
+              <div class="card_price">
+                <div class="price">
+                  <svg class="price__icon">
+                    <use href="./img/icon.svg#price"></use>
+                  </svg>
+                  <p class="price__title">Ціна реклами</p>
+                </div>
+
+                <div class="price-field">
+                  <span class="left-text">15/24</span>
+                  <div class="right-text">
+                    <span class="right-title">36 850₴</span>
+                    <svg class="arrov__icon">
+                      <use href="./img/icon.svg#arrow_down"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="card__about">
+                <svg class="about__icon">
+                  <use href="./img/icon.svg#about"></use>
+                </svg>
+                <p class="card__about-title">
+                  Формат розміщення
+                  <a class="card__about-link" href="">Що це?</a>
+                </p>
+              </div>
+              <div class="card__bot">
+                <div class="card__like">
+                  <svg class="like__icon">
+                    <use href="./img/icon.svg#like"></use>
+                  </svg>
+                  <span class="like__number">17</span>
+                </div>
+                <button class="card__btn">
+                  <span class="card__btb-bag">
+                    <svg class="bag__icon">
+                      <use href="./img/icon.svg#bag"></use>
+                    </svg>
+                  </span>
+                  Купити
+                </button>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container1">
+        <div class="footer__container">
+          <img class="footer__img" src="./img/footer__img.png" alt="" />
+          <div class="footer__info">
+            <p class="footer__subtitle">Свяжитесь с нами</p>
+            <h2 class="footer__title">Оставьте заявку на обратную связь</h2>
+            <form id="myForm" onsubmit="return validateForm()">
+              <input
+                class="footer__form_input"
+                type="text"
+                id="name"
+                name="name"
+                required
+                placeholder="Ваше имя"
+              />
+
+              <input
+                class="footer__form_input"
+                type="tel"
+                id="phone"
+                name="phone"
+                required
+                placeholder="Номер телефона"
+              />
+
+              <div class="captcha-container">
+                <div class="checkbox-container">
+                  <input type="checkbox" id="notRobot" name="notRobot" />
+                  <p class="capcha__title">I am not a robot</p>
+                </div>
+                <div class="capcha">
+                  <img src="./img/capcha.png" alt="" />
+                  <p class="capcha-p">reCAPTCHA</p>
+                  <p class="capcha-p1">Privacy - Terms</p>
+                </div>
+              </div>
+
+              <button class="footer__form_btn" type="submit">Отправить</button>
+            </form>
+          </div>
+        </div>
+        <p class="footer__bot">
+          NazarKril 2023-2024 © Skyweb Co. Все права защищены.
+        </p>
+      </div>
+    </footer>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

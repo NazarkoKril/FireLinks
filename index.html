@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css -->
+    <link rel="stylesheet" href="./css/styled.css" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- slider -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    <!-- sweet alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+    <title>Firelinks</title>
+  </head>
+  <body>
+    <header>
+      <div class="header__container">
+        <div class="container">
+          <div class="header__top">
+            <div class="logo">
+              <a href="">
+                <img src="./img/Logo.png" alt="Logo site" />Firelinks</a
+              >
+            </div>
+            <div class="burger_menu_home">
+              <div class="menu-btn1 menu-btn-red">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+            <div class="menu1">
+              <nav>
+                <ul class="menu__list1">
+                  <li class="nav__items menu__items1">
+                    <a href="#home">
+                      <i class="fa-solid fa-house-chimney"></i>
+                    </a>
+                  </li>
+                  <li class="nav__items menu__items1">
+                    <a href="#useful">Possibilities</a>
+                  </li>
+                  <li class="nav__items menu__items1">
+                    <a href="#faq">FAQ</a>
+                  </li>
+                  <li class="nav__items menu__items1">
+                    <a href="#tariff">Tariffs</a>
+                  </li>
+                  <li class="nav__items menu__items1">
+                    <a href="#review">Reviews</a>
+                  </li>
+                  <li class="nav__items menu__items1">
+                    <a href="#our_works">Our Works</a>
+                  </li>
+                  <li class="nav__items menu__items1">
+                    <a href="#contact">Contacts</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <nav class="nav">
+              <ul class="nav__list">
+                <li class="nav__item"><a href="#useful">Possibilities</a></li>
+                <li class="nav__item"><a href="#faq">FAQ</a></li>
+                <li class="nav__item"><a href="#tariff">Tariffs</a></li>
+                <li class="nav__item"><a href="#review">Reviews</a></li>
+                <li class="nav__item"><a href="#our_works">Our Works</a></li>
+                <li class="nav__item"><a href="#contact">Contacts</a></li>
+              </ul>
+            </nav>
+            <div class="header__btn">
+              <a href="./indexEnlarge.html" class="header__btn-text"
+                >ENLARGE TEXT</a
+              >
+            </div>
+          </div>
+          <div class="header__bot">
+            <div class="header__info">
+              <h2 class="header__title">
+                Your traffic will <br />not burn with <br />our links
+              </h2>
+              <div class="header__btn-2">
+                <a href="./indexEnlarge.html" class="header__btn-text-2"
+                  >ENLARGE TEXT</a
+                >
+              </div>
+              <div class="order__btn">
+                <button onclick="openForm()" class="order__btn_1">
+                  GET STARTED
+                </button>
+              </div>
+            </div>
+            <img src="./img/header__img.png" alt="purple__round" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="useful" id="useful">
+        <div class="container">
+          <h3 class="useful__title">Our service will be useful:</h3>
+          <div class="useful__container">
+            <ul class="useful__list">
+              <li class="useful__item">
+                <h3 class="useful__item-title">01</h3>
+                <p class="useful__item-subtitle">
+                  Internet marketers who work with purchasing traffic and want
+                  to receive information on ego quality and additional
+                  information about users through macros, as well as those who
+                  deal with email newsletters
+                </p>
+              </li>
+              <li class="useful__item">
+                <h3 class="useful__item-title">02</h3>
+                <p class="useful__item-subtitle">
+                  Website owners can track traffic statistics, gaining valuable
+                  insights for further improving productivity and interaction
+                  with relevant content.
+                </p>
+              </li>
+              <li class="useful__item">
+                <h3 class="useful__item-title">03</h3>
+                <p class="useful__item-subtitle">
+                  To bloggers who share links in their profiles on social
+                  networks, also to track traffic statistics and earn from
+                  advertising
+                </p>
+              </li>
+              <li class="useful__item">
+                <h3 class="useful__item-title">04</h3>
+                <p class="useful__item-subtitle">
+                  Content creators (YouTubers, podcasters) can leverage our
+                  service to understand audience demographics and preferences,
+                  optimizing content for maximum impact and engagement.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="service">
+        <div class="container">
+          <h3 class="service__title">Service capabilities</h3>
+
+          <ul class="service__list">
+            <li class="service__item">
+              <div class="service__item-container">
+                <h4 class="service__item-title">Routing</h4>
+                <img src="./img/rout.png" alt="2 arrow" />
+              </div>
+              <p class="service__item-subtitle">
+                The distribution of transitions depends on many conditions, such
+                as OS, browser, country, city, it is even possible to track
+                whether AdBlock or the Metamask extension is installed in the
+                browser and send such users to the site you need.
+              </p>
+            </li>
+            <li class="service__item">
+              <div class="service__item-container">
+                <h4 class="service__item-title">Spare links</h4>
+                <img src="./img/links.png" alt="geometric figure" />
+              </div>
+              <p class="service__item-subtitle">
+                Ability to specify additional links to which users will be
+                redirected, in case of blocking of previous links by various
+                services
+              </p>
+            </li>
+            <li class="service__item">
+              <div class="service__item-container">
+                <h4 class="service__item-title">Link monitoring and domains</h4>
+                <img src="./img/monitor.png" alt="eye" />
+              </div>
+              <p class="service__item-subtitle">
+                All domains and links are constantly monitored for blocking by
+                various services that can cut off part of the traffic. At the
+                moment, we monitor such services as: Google Safe Browsing,
+                AdBlock, PhishFort, Ultimate Hosts Blacklist, Metamask. In case
+                of blocking, users receive notifications on all available
+                channels.
+              </p>
+            </li>
+            <li class="service__item">
+              <div class="service__item-container">
+                <h4 class="service__item-title">More than 100 domains</h4>
+                <img src="./img/domen.png" alt="3 servers" />
+              </div>
+              <p class="service__item-subtitle">
+                Which you can use in your links. You can also link your domains
+                and optionally generate an SSL certificate.
+              </p>
+            </li>
+            <li class="service__item">
+              <div class="service__item-container">
+                <h4 class="service__item-title">Statistics</h4>
+                <img src="./img/diagram.png" alt="diagram" />
+              </div>
+              <p class="service__item-subtitle">
+                You can track statistics by days, countries, cities, devices,
+                brands of mobile devices, OS, browsers, languages, Internet
+                providers, used proxies. Statistics on clicks and detailed
+                information on each transition, starting with the source from
+                which the user followed your link.
+              </p>
+            </li>
+            <li class="service__item">
+              <div class="service__item-container">
+                <h4 class="service__item-title">Cloaking</h4>
+                <img src="./img/cloak.png" alt="mask" />
+              </div>
+              <p class="service__item-subtitle">
+                If you need to hide the main site from the eyes of moderators of
+                advertising networks or just extra users, then you can specify a
+                "white" site that they will see when clicking on a link, with a
+                redirect or loading a page without a redirect. Own bases with IP
+                Facebook, Google, Yandex, VK.
+              </p>
+            </li>
+            <li class="service__item">
+              <div class="service__item-container">
+                <h4 class="service__item-title">Teams</h4>
+                <img src="./img/group.png" alt="3 people" />
+              </div>
+              <p class="service__item-subtitle">
+                Ability to add users, assign them roles and access to the
+                system. The ability to connect Telegram groups for teams, thus
+                receiving all important notifications about the team's actions
+                in one place so as not to miss anything important, as well as
+                promptly react to changes.
+              </p>
+            </li>
+            <li class="service__item">
+              <div class="service__item-container">
+                <h4 class="service__item-title">Abuse-proof server</h4>
+                <img src="./img/server.png" alt="shield" />
+              </div>
+              <p class="service__item-subtitle">
+                Other link managers will delete your links at the first
+                complaint, with us you can rest assured that your links will be
+                intact and safe and you will not lose valuable traffic.
+              </p>
+            </li>
+            <li class="service__item">
+              <div class="service__item-container">
+                <h4 class="service__item-title">Macros</h4>
+                <img src="./img/macr.png" alt="2 price tag" />
+              </div>
+              <p class="service__item-subtitle">
+                Put in the link the information you need about the user's
+                device, as well as information about his country, city, mobile
+                operator, and more.
+              </p>
+            </li>
+            <li class="service__item">
+              <div class="service__item-container">
+                <h4 class="service__item-title">API</h4>
+                <img src="./img/api.png" alt="API icon" />
+              </div>
+              <p class="service__item-subtitle">
+                You can track statistics by days, countries, cities, devices,
+                brands of mobile devices, OS, browsers, languages, Internet
+                providers, used proxies. Statistics on clicks and detailed
+                information on each transition, starting with the source from
+                which the user followed your link.
+              </p>
+            </li>
+          </ul>
+          <div class="service__btn">
+            <button onclick="openForm()" class="service__btn-1">
+              GET STARTED
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="faq__section" id="faq">
+        <div class="container">
+          <h2 class="faq__title">Frequently Asked Questions</h2>
+          <div class="faq__container">
+            <ul class="faq__list">
+              <li class="faq__item">
+                What is link routing?
+                <div class="faq__answer">
+                  Link routing is the process of directing user transitions
+                  based on various conditions such as OS, browser, country, and
+                  more. It allows you to optimize traffic distribution for
+                  better results.
+                </div>
+                <img src="./img/plus.png" alt="plus" class="faq__img" />
+              </li>
+
+              <li class="faq__item">
+                How does spare links feature work?
+
+                <div class="faq__answer">
+                  Spare links serve as backup redirections in case the primary
+                  links get blocked by different services. It ensures a seamless
+                  user experience even in the face of potential link
+                  restrictions.
+                </div>
+                <img src="./img/plus.png" alt="plus" class="faq__img" />
+              </li>
+              <li class="faq__item">
+                What is link monitoring and domains?
+
+                <div class="faq__answer">
+                  All domains and links are constantly monitored for blocking by
+                  various services such as Google Safe Browsing, AdBlock,
+                  PhishFort, Ultimate Hosts Blacklist, and Metamask. Users
+                  receive notifications if any blocking occurs.
+                </div>
+                <img src="./img/plus.png" alt="plus" class="faq__img" />
+              </li>
+              <li class="faq__item">
+                How many domains can I use?
+
+                <div class="faq__answer">
+                  You can use more than 100 domains for your links.
+                  Additionally, you have the option to link your own domains and
+                  generate SSL certificates.
+                </div>
+                <img src="./img/plus.png" alt="plus" class="faq__img" />
+              </li>
+              <li class="faq__item">
+                Can I track detailed statistics?
+
+                <div class="faq__answer">
+                  Yes, you can track statistics by days, countries, cities,
+                  devices, brands of mobile devices, OS, browsers, languages,
+                  Internet providers, and used proxies. Detailed information is
+                  available for each transition, starting from the source.
+                </div>
+                <img src="./img/plus.png" alt="plus" class="faq__img" />
+              </li>
+            </ul>
+            <ul class="faq__list">
+              <li class="faq__item">
+                What is cloaking?
+                <div class="faq__answer">
+                  Cloaking allows you to hide the main site from the eyes of
+                  advertising network moderators or extra users. You can specify
+                  a "white" site that users will see when clicking on a link,
+                  with or without a redirect.
+                </div>
+                <img src="./img/plus.png" alt="plus" class="faq__img" />
+              </li>
+              <li class="faq__item">
+                How does the Teams feature work?
+                <div class="faq__answer">
+                  The Teams feature allows you to add users, assign roles, and
+                  provide access to the system. You can connect Telegram groups
+                  for teams to receive important notifications and promptly
+                  react to changes.
+                </div>
+                <img src="./img/plus.png" alt="plus" class="faq__img" />
+              </li>
+              <li class="faq__item">
+                Is the server abuse-proof?
+                <div class="faq__answer">
+                  Yes, our abuse-proof server ensures that your links remain
+                  intact and safe. Unlike other link managers, we prioritize
+                  protecting your links and valuable traffic.
+                </div>
+                <img src="./img/plus.png" alt="plus" class="faq__img" />
+              </li>
+              <li class="faq__item">
+                How do macros work?
+                <div class="faq__answer">
+                  Macros allow you to insert information about the user's
+                  device, as well as details about their country, city, mobile
+                  operator, and more, into the link.
+                </div>
+                <img src="./img/plus.png" alt="plus" class="faq__img" />
+              </li>
+              <li class="faq__item">
+                Is an API available?
+                <div class="faq__answer">
+                  Yes, we provide an API that allows you to track detailed
+                  statistics on clicks, transitions, and user information. It
+                  offers flexibility and integration capabilities for advanced
+                  users.
+                </div>
+                <img src="./img/plus.png" alt="plus" class="faq__img" />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="tariffs" id="tariff">
+        <div class="container">
+          <h2 class="tariffs__title">Tariffs</h2>
+          <div class="tariffs__container">
+            <ul class="tariffs__list">
+              <li class="tariffs__item tariffs1">
+                <h3 class="tariffs__item-title">Standart</h3>
+                <p class="tariffs__item-subtitle">Maximum links: 500</p>
+                <div class="tariff__menu">
+                  <p>API</p>
+                  <img src="./img/tariff__error.png" alt="disable" />
+                </div>
+                <div class="tariff__menu">
+                  <p>Limit of API requests in seconds</p>
+                  <img src="./img/tariff__error.png" alt="disable" />
+                </div>
+                <div class="tariff__menu">
+                  <p>Telegram bot</p>
+                  <img src="./img/tariff__error.png" alt="include" />
+                </div>
+                <div class="tariff__menu">
+                  <p>Getting the IP call log</p>
+                  <img src="./img/tariff__error.png" alt="disable" />
+                </div>
+                <p class="tariff__price">Price: 10$ / month</p>
+              </li>
+              <li class="tariffs__item tariffs1">
+                <h3 class="tariffs__item-title">Advance</h3>
+                <p class="tariffs__item-subtitle">Maximum links: 1000</p>
+                <div class="tariff__menu">
+                  <p>API</p>
+                  <img src="./img/tariff__error.png" alt="disable" />
+                </div>
+                <div class="tariff__menu">
+                  Limit of API requests in seconds<img
+                    src="./img/tariff__error.png"
+                    alt="disable"
+                  />
+                </div>
+                <div class="tariff__menu">
+                  Telegram bot<img src="./img/tariff__good.png" alt="include" />
+                </div>
+                <div class="tariff__menu">
+                  Getting the IP call log<img
+                    src="./img/tariff__error.png"
+                    alt="disable"
+                  />
+                </div>
+                <p class="tariff__price">Price: 20$ / month</p>
+              </li>
+              <li class="tariffs__item tariffs1">
+                <h3 class="tariffs__item-title">Premium</h3>
+                <p class="tariffs__item-subtitle">Maximum links: 1000</p>
+                <div class="tariff__menu">
+                  API<img src="./img/tariff__good.png" alt="include" />
+                </div>
+                <div class="tariff__menu">
+                  Limit of API requests in seconds: 500
+                  <img src="./img/tariff__good.png" alt="include" />
+                </div>
+                <div class="tariff__menu">
+                  Telegram bot<img src="./img/tariff__good.png" alt="include" />
+                </div>
+                <div class="tariff__menu">
+                  Getting the IP call log<img
+                    src="./img/tariff__error.png"
+                    alt="disable"
+                  />
+                </div>
+                <p class="tariff__price">Price: 50$ / month</p>
+              </li>
+              <li class="tariffs__item tariffs1">
+                <h3 class="tariffs__item-title">Proffesion</h3>
+                <p class="tariffs__item-subtitle">Maximum links: Infinite</p>
+                <div class="tariff__menu">
+                  API<img src="./img/tariff__good.png" alt="include" />
+                </div>
+                <div class="tariff__menu">
+                  Limit of API requests in seconds: 1 000
+                  <img src="./img/tariff__good.png" alt="include" />
+                </div>
+                <div class="tariff__menu">
+                  Telegram bot<img src="./img/tariff__good.png" alt="include" />
+                </div>
+                <div class="tariff__menu">
+                  Getting the IP call log<img
+                    src="./img/tariff__good.png"
+                    alt="include"
+                  />
+                </div>
+                <p class="tariff__price">Price: 100$ / month</p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="service__btn">
+            <button onclick="openForm()" class="service__btn-1">
+              GET STARTED
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="reviews" id="review">
+        <div class="container">
+          <h2 class="reviews__title">Reviews</h2>
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide swiper_slide">
+                <div class="swiper__user-info">
+                  <img
+                    class="swiper__img"
+                    src="./img/user.png"
+                    alt="user icon"
+                  />
+                  <p class="name__tile">Anna</p>
+                </div>
+                <p class="swiper__info">
+                  Impressive service! Very satisfied with the results. A wide
+                  range of tools, real-time statistics, and a user-friendly
+                  interface make it a go-to platform for internet marketers. The
+                  ability to track traffic quality through macros is a
+                  game-changer for those dealing with email newsletters.
+                </p>
+              </div>
+              <div class="swiper-slide swiper_slide">
+                <div class="swiper__user-info">
+                  <img
+                    class="swiper__img"
+                    src="./img/user.png"
+                    alt="user icon"
+                  />
+                  <p class="name__tile">Alex</p>
+                </div>
+                <p class="swiper__info">
+                  I appreciate the versatility of the service. The option to
+                  specify additional links in case of primary link blocking adds
+                  a layer of security and flexibility to my campaigns. The
+                  platform is user-friendly, making it easy to navigate.
+                </p>
+              </div>
+              <div class="swiper-slide swiper_slide">
+                <div class="swiper__user-info">
+                  <img
+                    class="swiper__img"
+                    src="./img/user.png"
+                    alt="user icon"
+                  />
+                  <p class="name__tile">Artem</p>
+                </div>
+                <p class="swiper__info">
+                  The statistics provided by the platform are truly impressive.
+                  I can track user data by days, countries, cities, devices, and
+                  more. The real-time insights allow me to optimize my marketing
+                  strategies effectively and enhance overall performance.
+                </p>
+              </div>
+              <div class="swiper-slide swiper_slide">
+                <div class="swiper__user-info">
+                  <img
+                    class="swiper__img"
+                    src="./img/user.png"
+                    alt="user icon"
+                  />
+                  <p class="name__tile">Michael</p>
+                </div>
+                <p class="swiper__info">
+                  The vast selection of domains and the ability to generate SSL
+                  certificates are standout features. This ensures a secure and
+                  reliable environment for link management. The platform's
+                  commitment to data security is commendable.
+                </p>
+              </div>
+              <div class="swiper-slide swiper_slide">
+                <div class="swiper__user-info">
+                  <img
+                    class="swiper__img"
+                    src="./img/user.png"
+                    alt="user icon"
+                  />
+                  <p class="name__tile">Victoria</p>
+                </div>
+                <p class="swiper__info">
+                  Cloaking features have proven to be effective in maintaining
+                  the visibility of my main pages while avoiding potential
+                  blocks from ad networks. The notification system ensures that
+                  I stay informed about any developments, allowing for timely
+                  adjustments.
+                </p>
+              </div>
+              <div class="swiper-slide swiper_slide">
+                <div class="swiper__user-info">
+                  <img
+                    class="swiper__img"
+                    src="./img/user.png"
+                    alt="user icon"
+                  />
+                  <p class="name__tile">Peter</p>
+                </div>
+                <p class="swiper__info">
+                  Having tried various platforms, this one stands out as the
+                  most reliable. The diverse set of tools and flexible settings
+                  cater to the needs of professional users. It's a comprehensive
+                  solution for link management and optimization.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <section class="our_works" id="our_works">
+        <div class="container">
+          <h2 class="reviews__title t2">Our works AI</h2>
+          <div class="swiper mySwiper1">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide swiper__slide">
+                <img src="./img/gallery_1.jpg" alt="image AI" />
+              </div>
+              <div class="swiper-slide swiper__slide">
+                <img src="./img/gallery_2.jpg" alt="image AI" />
+              </div>
+              <div class="swiper-slide swiper__slide">
+                <img src="./img/gallery_3.jpg" alt="image AI" />
+              </div>
+              <div class="swiper-slide swiper__slide">
+                <img src="./img/gallery_4.jpg" alt="image AI" />
+              </div>
+              <div class="swiper-slide swiper__slide">
+                <img src="./img/gallery_5.png" alt="image AI" />
+              </div>
+              <div class="swiper-slide swiper__slide">
+                <img src="./img/gallery_6.png" alt="image AI" />
+              </div>
+              <div class="swiper-slide swiper__slide">
+                <img src="./img/gallery_7.png" alt="image AI" />
+              </div>
+              <div class="swiper-slide swiper__slide">
+                <img src="./img/gallery_8.png" alt="image AI" />
+              </div>
+            </div>
+            <div class="swiper-button-next next1"></div>
+            <div class="swiper-button-prev prev1"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="contact">
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7137.135356895509!2d-20.27500575838996!3d63.43522429058389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48d708c2285cf647%3A0x7a105ac3b0e5a79d!2sSundh%C3%B6ll%20Vestmanneyja!5e0!3m2!1suk!2sua!4v1702638021996!5m2!1suk!2sua"
+          class="map__iframe"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        >
+        </iframe>
+      </div>
+      <div class="container">
+        <div class="footer">
+          <div class="footer__left">
+            <div class="logo1">
+              <a href="">
+                <img src="./img/Logo.png" alt="Logo site" />Firelinks</a
+              >
+            </div>
+            <p class="footer__title">
+              Firelinks - your premier destination for efficient link management
+              and traffic analytics. Together, we elevate you to new heights!
+            </p>
+          </div>
+          <div class="footer__right">
+            <div class="footer__nav">
+              <ul class="nav__list-footer">
+                <li class="nav__item-footer">
+                  <a href="#useful">Possibilities</a>
+                </li>
+                <li class="nav__item-footer"><a href="#faq">FAQ</a></li>
+                <li class="nav__item-footer"><a href="#tariff">Tariffs</a></li>
+                <li class="nav__item-footer"><a href="#review">Reviews</a></li>
+                <li class="nav__item-footer">
+                  <a href="#our_works">Our Works</a>
+                </li>
+                <li class="nav__item-footer">
+                  <a href="#contact">Contacts</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="contact">
+              <a class="info__up-subtitle" href="tel:+48000000000"
+                >+48 00 000 00 00
+              </a>
+              <a class="info__up-subtitle" href="mailto:firelinks@aaaaaa.com"
+                >firelinks@aaaa.com</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="lightbox" id="lightbox">
+      <span class="close" id="close">&times;</span>
+      <img
+        class="lightbox-content"
+        id="lightbox-img"
+        src="./img/plus.png"
+        alt="Image description"
+      />
+    </div>
+    <div class="order__form" id="myFormContainer">
+      <form id="myForm" class="form">
+        <input
+          type="text"
+          id="name"
+          name="name"
+          class="form__input"
+          placeholder="Name"
+        />
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          class="form__input _phone phoneInput"
+          placeholder="+48 ___ ___ ___"
+        />
+
+        <input
+          type="email"
+          id="email"
+          name="email"
+          class="form__input"
+          placeholder="E-mail"
+        />
+
+        <p class="tariff__title">Choose Tariff:</p>
+        <div class="tariffs__container1">
+          <div class="tariff__container">
+            <label class="telegram-radio">
+              <input
+                type="radio"
+                name="tariff"
+                value="standard"
+                id="standard"
+              />
+              <span class="radio-label">standard</span>
+            </label>
+            <label class="telegram-radio">
+              <input
+                type="radio"
+                name="tariff"
+                value="advanced"
+                id="advanced"
+              />
+              <span class="radio-label">advanced</span>
+            </label>
+            <label class="telegram-radio">
+              <input type="radio" name="tariff" value="premium" id="premium" />
+              <span class="radio-label">premium</span>
+            </label>
+            <label class="telegram-radio">
+              <input
+                type="radio"
+                name="tariff"
+                value="professional"
+                id="professional"
+              />
+              <span class="radio-label">professional</span>
+            </label>
+          </div>
+        </div>
+
+        <textarea
+          id="message"
+          name="message"
+          class="input__text"
+          rows="4"
+          placeholder="Enter your text here..."
+        ></textarea>
+
+        <label class="checkbox__container">
+          <input
+            type="checkbox"
+            id="agreement"
+            name="agreement"
+            class="form__checkbox"
+          />
+          <span class="checkbox__title">
+            I agree to the processing of personal data
+          </span>
+        </label>
+
+        <button type="button" id="submitBtn" class="form__btn">Submit</button>
+      </form>
+      <button
+        type="button"
+        id="closeForm"
+        onclick="closeForm()"
+        class="form__btn-close"
+      >
+        x
+      </button>
+    </div>
+    <div id="overlay"></div>
+    <button id="scrollToTopBtn" onclick="scrollToTop()">TOP</button>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#phone").mask("+48-999-999-999");
+      });
+    </script>
+  </body>
+</html>
